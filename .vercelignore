@@ -1,0 +1,11 @@
+# Secrets must never be uploaded. Belt-and-braces alongside .gitignore,
+# because Vercel uses .vercelignore (falling back to .gitignore).
+.env
+.env.*
+*.local
+
+# Dev-only artifacts
+node_modules
+.git
+*.log
+*.err

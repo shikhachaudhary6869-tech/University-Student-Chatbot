@@ -1,0 +1,31 @@
+{
+    "university": {
+        "name": "ABES Engineering College",
+        "location": "Ghaziabad, Uttar Pradesh",
+        "type": "Engineering College"
+    },
+
+    "departments": [
+        "Computer Science and Engineering",
+        "Computer Science and Engineering - Data Science",
+        "Information Technology",
+        "Electronics and Communication Engineering",
+        "Mechanical Engineering",
+        "Electrical and Electronics Engineering"
+    ],
+
+    "student_services": [
+        "Examination Cell",
+        "Training and Placement Cell",
+        "Library",
+        "Academic Department",
+        "Student Support"
+    ],
+
+    "support": {
+        "academic": "Students can contact their respective department for academic-related queries.",
+        "examination": "Students should contact the Examination Cell for examination-related information.",
+        "placement": "Students can contact the Training and Placement Cell for placement-related information.",
+        "library": "Students can contact the library for book availability and library-related services."
+    }
+}

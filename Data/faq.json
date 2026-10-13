@@ -1,0 +1,16 @@
+{
+    "frequently_asked_questions": [
+        {
+            "question": "How can I get academic support?",
+            "answer": "Students can contact their respective academic department for support."
+        },
+        {
+            "question": "Where can I get examination-related help?",
+            "answer": "Students can contact the Examination Cell for examination-related information."
+        },
+        {
+            "question": "Where can I get placement-related help?",
+            "answer": "Students can contact the Training and Placement Cell for placement-related information."
+        }
+    ]
+}

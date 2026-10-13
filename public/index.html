@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES | University Student Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-icon">🎓</div>
+                <div>
+                    <h2>ABES</h2>
+                    <p>Engineering College</p>
+                </div>
+            </div>
+
+            <p class="sidebar-caption">YOUR STUDENT SPACE</p>
+
+            <nav class="navigation">
+                <button class="nav-item active" data-section="home">⌂ <span>Home</span></button>
+                <button class="nav-item" data-section="chat">▤ <span>Chat Assistant</span></button>
+                <button class="nav-item" data-section="history">◷ <span>Chat History</span></button>
+                <button class="nav-item" data-section="info">ⓘ <span>Quick Information</span></button>
+            </nav>
+
+            <div class="sidebar-note">
+                <span>✨</span>
+                <h3>Your journey.<br>Our support.</h3>
+                <p>Helping you move forward, one question at a time.</p>
+            </div>
+
+            <div class="sidebar-footer">Made for students 💜</div>
+        </aside>
+
+        <main class="main-area">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">UNIVERSITY STUDENT SUPPORT</p>
+                    <h1>Hi there! <span>👋</span></h1>
+                    <p class="subtitle">What can I help you with today?</p>
+                </div>
+                <div class="status-pill"><span></span> AI Assistant Online</div>
+            </header>
+
+            <section class="welcome-banner" id="home">
+                <div>
+                    <p class="banner-label">YOUR CAMPUS COMPANION</p>
+                    <h2>Learn. Grow. Achieve.</h2>
+                    <p>Get help with academics, examinations, placements and more.</p>
+                    <button class="banner-button" id="startChatBtn">Ask a question <span>→</span></button>
+                </div>
+                <div class="banner-art">📚<span>✦</span></div>
+            </section>
+
+            <section class="support-section">
+                <div class="section-heading">
+                    <div>
+                        <h2>Quick Support</h2>
+                        <p>Choose a category to get started</p>
+                    </div>
+                </div>
+
+                <div class="support-grid">
+                    <button class="support-card purple" data-question="What academic support is available?">
+                        <span class="card-icon">📚</span>
+                        <span class="card-title">Academic Support</span>
+                        <span class="card-description">Subjects and study guidance</span>
+                        <span class="card-arrow">↗</span>
+                    </button>
+
+                    <button class="support-card pink" data-question="What support is available for examinations?">
+                        <span class="card-icon">📝</span>
+                        <span class="card-title">Examinations</span>
+                        <span class="card-description">Exam and result guidance</span>
+                        <span class="card-arrow">↗</span>
+                    </button>
+
+                    <button class="support-card green" data-question="What placement support is available?">
+                        <span class="card-icon">💼</span>
+                        <span class="card-title">Placements</span>
+                        <span class="card-description">Career and interview prep</span>
+                        <span class="card-arrow">↗</span>
+                    </button>
+
+                    <button class="support-card blue" data-question="What library services are available?">
+                        <span class="card-icon">📖</span>
+                        <span class="card-title">Library</span>
+                        <span class="card-description">Books and library services</span>
+                        <span class="card-arrow">↗</span>
+                    </button>
+
+                    <button class="support-card yellow" data-question="What scholarship support is available?">
+                        <span class="card-icon">💰</span>
+                        <span class="card-title">Scholarships</span>
+                        <span class="card-description">Financial aid guidance</span>
+                        <span class="card-arrow">↗</span>
+                    </button>
+
+                    <button class="support-card lavender" data-question="Show me frequently asked questions.">
+                        <span class="card-icon">❔</span>
+                        <span class="card-title">FAQs</span>
+                        <span class="card-description">Common student questions</span>
+                        <span class="card-arrow">↗</span>
+                    </button>
+                </div>
+            </section>
+
+            <section class="chat-panel" id="chat">
+                <div class="chat-panel-header">
+                    <div class="assistant-avatar">🤖</div>
+                    <div class="assistant-details">
+                        <h2>University Support Assistant</h2>
+                        <p><span></span> Ready to help you</p>
+                    </div>
+                    <button id="newChatBtn" class="secondary-button">＋ New chat</button>
+                </div>
+
+                <div class="chat-box" id="chatBox" aria-live="polite">
+                    <div class="bot-message">
+                        <strong>Hello! 👋</strong>
+                        <p>I'm your university support assistant. Ask me about academics, examinations, placements, library services, scholarships or other student-support topics.</p>
+                    </div>
+                </div>
+
+                <form class="chat-input" id="chatForm">
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Type your question here..."
+                        aria-label="Your question"
+                        autocomplete="off"
+                        required
+                    >
+                    <button type="submit" id="sendBtn" aria-label="Send message">➤</button>
+                </form>
+                <p class="privacy-note">AI-generated answers may need verification. Check official college sources for important information.</p>
+            </section>
+
+            <footer class="page-footer">
+                <span>Student Support Dashboard</span>
+                <span>Designed with 💜 for students</span>
+            </footer>
+        </main>
+
+        <aside class="right-panel" id="info">
+            <section class="info-card college-card">
+                <div class="college-illustration">🎓</div>
+                <p class="banner-label">YOUR CAMPUS</p>
+                <h2>ABES Engineering College</h2>
+                <p>Ghaziabad, Uttar Pradesh</p>
+                <a href="https://www.abes.ac.in/" target="_blank" rel="noopener noreferrer">Visit college website ↗</a>
+            </section>
+
+            <section class="info-card">
+                <div class="right-heading">
+                    <h2>💬 Suggested Questions</h2>
+                </div>
+                <button class="suggestion" data-question="Which departments are available at ABES Engineering College?">Which departments are available? <span>→</span></button>
+                <button class="suggestion" data-question="How can I prepare for campus placements?">How do I prepare for placements? <span>→</span></button>
+                <button class="suggestion" data-question="How can I get examination-related help?">Where can I get exam help? <span>→</span></button>
+                <button class="suggestion" data-question="How can I get academic support?">How do I get academic support? <span>→</span></button>
+            </section>
+
+            <section class="info-card help-card">
+                <div class="right-heading">
+                    <h2>💡 Helpful tip</h2>
+                </div>
+                <p>Ask a clear question to get a more useful answer. For example:</p>
+                <button class="example-question" data-question="Explain DBMS in simple words with an example.">"Explain DBMS in simple words with an example."</button>
+            </section>
+        </aside>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
