@@ -20,7 +20,17 @@ questions = [
     "What library services are available", "How do I return a library book",
     "Can I access library resources", "Which departments are in the college",
     "Tell me about university facilities", "Where can I get college information",
-    "What student support services exist", "Tell me about the university"
+    "What student support services exist", "Tell me about the university",
+        "Explain the difference between DBMS and RDBMS",
+    "What is object oriented programming",
+    "Explain data structures and algorithms",
+    "Help me understand programming concepts",
+    "How can I improve my subject knowledge",
+    "Explain the basics of computer science",
+    "What is the difference between Java and Python",
+    "Help me learn database concepts",
+    "Explain operating system concepts",
+    "How do I understand my course subjects",
 ]
 
 labels = [
@@ -30,7 +40,9 @@ labels = [
     "scholarship", "scholarship", "scholarship", "scholarship", "scholarship",
     "library", "library", "library", "library", "library",
     "university_info", "university_info", "university_info",
-    "university_info", "university_info"
+    "university_info", "university_info",
+        "academic", "academic", "academic", "academic", "academic",
+    "academic", "academic", "academic", "academic", "academic",
 ]
 
 model = Pipeline([
