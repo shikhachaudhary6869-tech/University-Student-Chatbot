@@ -14,6 +14,7 @@ tests = [
 ]
 
 correct = 0
+failed_tests = []
 
 for question, expected in tests:
     predicted = model.predict([question])[0]
@@ -21,6 +22,8 @@ for question, expected in tests:
 
     if predicted == expected:
         correct += 1
+    else:
+        failed_tests.append((question, expected, predicted))
 
     print("Question:", question)
     print("Expected:", expected)
@@ -31,3 +34,10 @@ for question, expected in tests:
 print("Total tests:", len(tests))
 print("Correct predictions:", correct)
 print("Accuracy:", round(correct / len(tests) * 100, 2), "%")
+print("\nFailed Tests:", len(failed_tests))
+
+for question, expected, predicted in failed_tests:
+    print("Question:", question)
+    print("Expected:", expected)
+    print("Predicted:", predicted)
+    print()
