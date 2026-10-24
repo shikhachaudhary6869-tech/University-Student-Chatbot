@@ -33,6 +33,11 @@ data = {
         "What library services are available",
         "How do I return a library book",
         "Can I access library resources",
+        "How do I borrow a library book",
+         "How can I issue books from the library",
+          "Can students borrow books from the library",
+         "What is the process for borrowing books",
+         "How do I get a book issued from the library",
         "Which departments are in the college",
         "Tell me about university facilities",
         "Where can I get college information",
@@ -40,15 +45,16 @@ data = {
         "Tell me about the university"
     ],
     "intent": [
-        "academic", "academic", "academic", "academic", "academic",
-        "examination", "examination", "examination", "examination",
-        "examination", "placement", "placement", "placement",
-        "placement", "placement", "scholarship", "scholarship",
-        "scholarship", "scholarship", "scholarship", "library",
-        "library", "library", "library", "library",
-        "university_info", "university_info", "university_info",
-        "university_info", "university_info"
-    ]
+    "academic", "academic", "academic", "academic", "academic",
+    "examination", "examination", "examination", "examination", "examination",
+    "placement", "placement", "placement", "placement", "placement",
+    "scholarship", "scholarship", "scholarship", "scholarship", "scholarship",
+    "library", "library", "library", "library", "library",
+    "library", "library", "library", "library", "library",
+    "university_info", "university_info", "university_info",
+    "university_info", "university_info"
+]
+    
 }
 
 df = pd.DataFrame(data)
