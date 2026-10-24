@@ -42,3 +42,39 @@ This project is an AI-powered chatbot that helps university students get informa
 
 ## Security
 Never upload API keys or `.env` files to GitHub.
+## 🧠 Machine Learning Module
+
+The project includes a machine learning module that classifies student questions into different intent categories.
+
+### Supported Categories
+- Academic
+- Examination
+- Placement
+- Scholarship
+- Library
+- University Information
+
+### Technology Used
+- Python
+- Scikit-learn
+- TF-IDF Vectorization
+- Logistic Regression
+- Joblib
+
+### Model Testing
+A separate test script is available to check the model's predictions against expected categories.
+
+Run the training script:
+
+```bash
+python ml_model/train_model.py
+```
+
+Run the test script:
+
+```bash
+python ml_model/test_model.py
+```
+
+The model is saved as `student_intent_model.joblib` and can be used by the project's ML API.
+
