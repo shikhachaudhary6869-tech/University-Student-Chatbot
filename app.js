@@ -8,7 +8,7 @@ import path from "path";
 dotenv.config();
 
 const app = express();
-const dataPath = path.join(process.cwd(), "data");
+const dataPath = path.join(process.cwd(), "Data");
 
 const universityData = JSON.parse(
     fs.readFileSync(path.join(dataPath, "university.json"), "utf-8")
