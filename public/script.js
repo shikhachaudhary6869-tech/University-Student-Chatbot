@@ -110,7 +110,7 @@ async function sendMessage(question) {
     );
 
     try {
-        const response = await fetch("http://localhost:3000/gemini", {
+        const response = await fetch("https://university-student-chatbot-3.onrender.com/gemini", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
